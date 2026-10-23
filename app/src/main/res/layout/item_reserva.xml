@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="14dp"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFFFFF"
+    android:elevation="3dp">
+
+    <!-- Código de la reserva -->
+    <TextView
+        android:id="@+id/txtCodigoReserva"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reserva AV-12345678"
+        android:textColor="#123B70"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <!-- Nombre del pasajero -->
+    <TextView
+        android:id="@+id/txtClienteReserva"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Pasajero: Juan Pérez"
+        android:textColor="#334155"
+        android:textSize="14sp" />
+
+    <!-- Ruta del vuelo -->
+    <TextView
+        android:id="@+id/txtRutaReserva"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Lima → Cusco"
+        android:textColor="#172B4D"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Fecha y datos del vuelo -->
+    <TextView
+        android:id="@+id/txtFechaReserva"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="Fecha: 2026-10-12 · Vuelo AV101"
+        android:textColor="#64748B"
+        android:textSize="14sp" />
+
+    <!-- Cantidad de pasajeros -->
+    <TextView
+        android:id="@+id/txtPasajerosReserva"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="Pasajeros: 2"
+        android:textColor="#64748B"
+        android:textSize="14sp" />
+
+    <!-- Precio total -->
+    <TextView
+        android:id="@+id/txtPrecioReserva"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Total: S/ 378.00"
+        android:textColor="#1455A0"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- Estado de la reserva -->
+    <TextView
+        android:id="@+id/txtEstadoReserva"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#FFF0CC"
+        android:padding="8dp"
+        android:text="PENDIENTE"
+        android:textColor="#855A00"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <!-- Botón para editar la reserva -->
+    <Button
+        android:id="@+id/btnEditarReservaItem"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#6950A1"
+        android:text="EDITAR RESERVA"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textAllCaps="false" />
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+
+# Gradle y archivos generados
+.gradle/
+build/
+**/build/
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Configuración local de Android Studio
+local.properties
+.idea/
+*.iml
+
+# Credenciales y certificados
+.env
+.env.*
+!.env.example
+secrets.properties
+*.jks
+*.keystore
+

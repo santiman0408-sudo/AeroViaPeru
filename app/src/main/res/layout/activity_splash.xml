@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_splash"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:paddingTop="28dp"
+        android:paddingBottom="20dp">
+
+        <!-- Identidad de AeroVía Perú -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="✈"
+            android:textColor="#C62828"
+            android:textSize="58sp"
+            android:contentDescription="Avión de AeroVía Perú" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="AeroVía"
+            android:textColor="#12345A"
+            android:textSize="38sp"
+            android:textStyle="bold"
+            android:fontFamily="sans" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PERÚ"
+            android:textColor="#C62828"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.16" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:text="Vuela más cerca de tus destinos"
+            android:textColor="#526781"
+            android:textSize="19sp" />
+
+        <View
+            android:layout_width="56dp"
+            android:layout_height="4dp"
+            android:layout_marginTop="18dp"
+            android:background="#C62828" />
+
+        <!-- Mensaje principal -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:layout_marginBottom="14dp"
+            android:text="Tu próximo viaje comienza aquí"
+            android:textColor="#12345A"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Tarjetas de funcionalidades -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+
+            <!-- Buscar vuelos -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="126dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="6dp"
+                android:background="@drawable/bg_splash_card"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="⌕"
+                    android:textColor="#17579B"
+                    android:textSize="38sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Busca&#10;vuelos"
+                    android:textColor="#12345A"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- Gestionar reservas -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="126dp"
+                android:layout_weight="1"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="3dp"
+                android:background="@drawable/bg_splash_card"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="▦"
+                    android:textColor="#C62828"
+                    android:textSize="34sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Gestiona&#10;tus reservas"
+                    android:textColor="#12345A"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- Descubrir destinos -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="126dp"
+                android:layout_weight="1"
+                android:layout_marginStart="6dp"
+                android:background="@drawable/bg_splash_card"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="➤"
+                    android:textColor="#17579B"
+                    android:textSize="34sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Descubre&#10;destinos"
+                    android:textColor="#12345A"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Botón para entrar a la aplicación -->
+        <Button
+            android:id="@+id/btnComenzar"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/bg_splash_button"
+            android:backgroundTint="@null"
+            android:elevation="4dp"
+            android:text="Comenzar   →"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Pie de pantalla -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:text="AeroVía Perú&#10;Tu próxima aventura comienza aquí"
+            android:textColor="#526781"
+            android:textSize="13sp"
+            android:lineSpacingExtra="4dp" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    card_view:cardCornerRadius="14dp"
+    card_view:cardElevation="3dp"
+    card_view:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="#FFFFFF">
+
+        <!-- Aerolinea y numero de vuelo -->
+        <TextView
+            android:id="@+id/txtAerolinea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="AeroVía Perú · AV101"
+            android:textColor="#123B70"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <!-- Ruta del vuelo -->
+        <TextView
+            android:id="@+id/txtRuta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Lima → Cusco"
+            android:textColor="#172B4D"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Horarios -->
+        <TextView
+            android:id="@+id/txtHorario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="08:00 – 09:20"
+            android:textColor="#64748B"
+            android:textSize="14sp" />
+
+        <!-- Precio -->
+        <TextView
+            android:id="@+id/txtPrecio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="S/ 189.00"
+            android:textColor="#1455A0"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+        <!-- Seleccion del vuelo -->
+        <Button
+            android:id="@+id/btnSeleccionarVuelo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Seleccionar vuelo"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

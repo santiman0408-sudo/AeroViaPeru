@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Nombre de la aplicación -->
+    <string name="app_name">AeroVía Perú</string>
+
+    <!-- Opciones para seleccionar la cantidad de pasajeros -->
+    <string-array name="cantidades_pasajeros">
+        <item>1 pasajero</item>
+        <item>2 pasajeros</item>
+        <item>3 pasajeros</item>
+        <item>4 pasajeros</item>
+        <item>5 pasajeros</item>
+        <item>6 pasajeros</item>
+        <item>7 pasajeros</item>
+        <item>8 pasajeros</item>
+        <item>9 pasajeros</item>
+    </string-array>
+
+</resources>
+
+

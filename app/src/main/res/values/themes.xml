@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Base.Theme.AeroViaPeru"
+        parent="Theme.Material3.DayNight.NoActionBar">
+
+        <item name="android:windowBackground">#F3F6FC</item>
+        <item name="android:colorBackground">#F3F6FC</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:navigationBarColor">#F3F6FC</item>
+        <item name="android:windowLightNavigationBar">true</item>
+
+    </style>
+
+    <style name="Theme.AeroViaPeru"
+        parent="Base.Theme.AeroViaPeru" />
+
+</resources>

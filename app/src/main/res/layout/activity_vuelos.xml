@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F3F6FC"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vuelos disponibles"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#123B70"
+        android:paddingBottom="8dp" />
+
+    <TextView
+        android:id="@+id/txtResumenBusqueda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lima → Cusco"
+        android:textColor="#475569"
+        android:textSize="14sp"
+        android:paddingBottom="12dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerVuelos"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false" />
+
+</LinearLayout>
+
+

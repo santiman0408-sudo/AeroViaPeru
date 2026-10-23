@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F3F6FC"
+    android:padding="16dp">
+
+    <!-- Titulo -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mis reservas"
+        android:textColor="#123B70"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Cantidad de reservas -->
+    <TextView
+        android:id="@+id/txtCantidadReservas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tus viajes registrados"
+        android:textColor="#64748B"
+        android:textSize="14sp"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Lista de reservas -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerMisReservas"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:paddingBottom="8dp"
+        tools:listitem="@layout/item_reserva" />
+
+    <!-- Mensaje cuando no existen reservas -->
+    <TextView
+        android:id="@+id/txtSinReservas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="24dp"
+        android:text="Todavía no tienes reservas registradas."
+        android:textColor="#64748B"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <!-- Boton para regresar -->
+    <Button
+        android:id="@+id/btnVolverVuelos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Volver a vuelos"
+        android:textAllCaps="false" />
+
+</LinearLayout>
+
